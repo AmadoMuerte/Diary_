@@ -1,0 +1,179 @@
+/*обнуление*/
+*{padding:0;margin:0;border:0}*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}:focus,:active{outline:none}a:focus,a:active{outline:none}nav,footer,header,aside{display:block}html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%}input,button,textarea{font-family:inherit}input::-ms-clear{display:none}button{cursor:pointer}button::-moz-focus-inner{padding:0;border:0}a,a:visited{text-decoration:none}a:hover{text-decoration:none}ul li{list-style:none}img{vertical-align:top}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400}
+/*обнуление*/
+
+
+/*-------------------CONTAINER------------------------------*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/*-------------------HEADER------------------------------*/
+body{
+    background: #FDFCF3;
+}
+.header {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 26px;
+    }
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(100% 100% at 0% 0%, #ADCE74 25%, #FFF76A 71.88%, #FFCE89 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-radius: 12px;
+    margin-right: 18px;
+}
+.logo__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__item {
+        background: #FFFFFF;
+        border-radius: 12px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        padding: 15px;
+        background: #FFFFFF;
+        margin-right: 32px;
+    }
+
+    &__smile {
+        display: flex;
+        align-items: center;
+    }
+}
+.search__smile-item {
+    margin-right: 26px;
+}
+.search__smile-btn {
+    cursor: pointer;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: -14px;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 34px;
+        width: 167px;
+        height: 40px;
+        border-radius: 12px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        margin-right: 14px;
+        &-title {
+            margin-left: 18px;
+        }
+    }
+}
+
+.btn1 {
+    background-color: #FFCE89;
+}
+.btn2 {
+    background: linear-gradient(135deg, #61B15A 0%, #ADCE74 100%);
+    color: white;
+}
+
+.main {
+    margin-top: 50px;
+}
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    &__item {
+        margin-top: 20px;
+        width: 280px;
+        height: 280px;
+        position: relative;
+        
+        &-img {
+            background-image: url(../image/bg/virshem_germaniya_zamok_tropa_vecher_nebo_119771_1920x1080.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            height: 215px;
+            border-radius: 12px 12px 0px 0px;
+            display: flex;
+            justify-content: flex-end;
+            padding: 14px;
+        }
+    } 
+}
+
+.smile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+
+    &-item {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    
+}
+
+.text {
+    width: 280px;
+    top: 200px;
+    left: 0;
+    position: absolute;
+    background: rgba(243, 239, 239, 0.9);
+    backdrop-filter: blur(50px);
+    border-radius: 12px;
+}
+
+.top-text {
+    margin: 12px 14px 6px 14px;
+    display: flex;
+    justify-content: space-between;
+}
+.text__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+.text__date {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
+.bottom-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0px 14px 10px 14px;
+}
