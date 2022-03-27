@@ -11,7 +11,7 @@
 }
 /*-------------------HEADER------------------------------*/
 body{
-    background: #FDFCF3;
+    background: #f3f3ef;
 }
 .header {
 
@@ -43,6 +43,7 @@ body{
     line-height: 42px;
 }
 .search {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,6 +104,7 @@ body{
 .main {
     margin-top: 50px;
 }
+
 .list {
     width: 100%;
     display: flex;
@@ -110,7 +112,7 @@ body{
     flex-wrap: wrap;
     
     &__item {
-        margin-top: 20px;
+        margin-top: 10px;
         width: 280px;
         height: 280px;
         position: relative;
@@ -148,6 +150,9 @@ body{
 
 .text {
     width: 280px;
+    min-height: 80px;
+    max-height: 80px;
+    overflow: hidden;
     top: 200px;
     left: 0;
     position: absolute;
@@ -173,7 +178,109 @@ body{
 }
 .bottom-text {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 16px;
     margin: 0px 14px 10px 14px;
+}
+
+.formModal {
+    display: none;
+    margin-top: 50px;
+}
+
+.formModal__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.form {
+    width: 650px;
+}
+.form__title {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+    height: 60px;
+}
+.smileDate {
+    margin: 16px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.form .search__smile {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 18px;
+    margin-right: 16px;
+}
+
+.form__date {
+    width: 200px;
+    padding: 15px;
+    font-size: 18px;
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+.description {
+    width: 100%;
+    height: 478px;
+    padding: 15px;
+    font-size: 18px;
+    resize: none;
+}
+
+.createPage {
+    color: white;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #61B15A 0%, #ADCE74 100%);
+    border-radius: 12px;        
+}
+
+.searchBg {
+    width: 496px;
+}
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.serchBg__input {
+    width: 100%;
+    height: 60px;
+    border-radius: 12px;
+    margin-right: 14px;
+    padding: 15px;
+    font-size: 18px;
+}
+.searchBg__btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF76A;
+    border-radius: 12px;
+}
+
+.searchBg__items {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item-img {
+    width: 229px;
+    height: 119px;
+    border-radius: 12px;
+}
+
+.invisibleMain  {
+    display: none;
+}
+.invisible {
+    display: block;
 }
