@@ -241,6 +241,7 @@ body {
   align-items: center; }
 
 .form .search__smile {
+  position: relative;
   background: #FFFFFF;
   border-radius: 12px;
   padding: 18px;
@@ -258,7 +259,8 @@ body {
   height: 478px;
   padding: 15px;
   font-size: 18px;
-  resize: none; }
+  resize: none;
+  border-radius: 12px; }
 
 .createPage {
   color: white;
@@ -302,8 +304,28 @@ body {
   height: 119px;
   border-radius: 12px; }
 
+.search__smile-item {
+  font-size: 25px; }
+
 .invisibleMain {
   display: none; }
 
 .invisible {
   display: block; }
+
+.search__smile-modal {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  display: none;
+  flex-wrap: wrap;
+  background-color: #ebe7e7;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 12px;
+  width: 115px;
+  height: 160px;
+  justify-content: space-around; }
+
+.invisibleSmile {
+  display: flex; }
