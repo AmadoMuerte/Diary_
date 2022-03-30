@@ -61,6 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 /*обнуление*/
 /*-------------------CONTAINER------------------------------*/
 .container {
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px; }
@@ -69,11 +70,13 @@ h1, h2, h3, h4, h5, h6 {
 body {
   background: #f3f3ef; }
 
-.header__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 26px; }
+.header {
+  position: relative; }
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px; }
 
 .logo {
   display: flex;
@@ -334,3 +337,66 @@ body {
 
 .invisibleSmile {
   display: flex; }
+
+.noteModal {
+  width: 1000px;
+  position: absolute;
+  z-index: 1; }
+
+.noteModal__inner {
+  width: 100%;
+  margin: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #e4e3e3;
+  padding: 20px 20px;
+  background-color: white; }
+
+.noteModalBtn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; }
+
+.btnBack {
+  width: 30px;
+  padding: 5px 10px;
+  border-radius: 50%; }
+
+.topBlock {
+  padding: 10px 20px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.topBlock__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px; }
+
+.topBlock__date {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px; }
+
+.buttomBlock {
+  display: flex;
+  justify-content: space-between; }
+
+.buttomBlock__img {
+  border-radius: 10px;
+  width: 600px;
+  height: 500px;
+  overflow: hidden; }
+
+.buttomBlock__img img {
+  width: 100%;
+  height: auto; }
+
+.buttomBlock__text {
+  padding: 0px 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px; }
+
+.blur {
+  filter: blur(5px); }

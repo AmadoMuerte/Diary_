@@ -1,11 +1,14 @@
 const btnAdd = document.querySelector('.btn2');
 const list = document.querySelector('.list');
+const listItem = document.querySelectorAll('.list__item');
 const btnCreate = document.querySelector('.createPage'); 
 const inputTitle = document.querySelector('.form__title');
 const inputDate = document.querySelector('.form__date');
 const description = document.querySelector('.description');
 const slimeList = document.querySelector('.search__smile-modal');
 const smileItem = document.querySelector('#smile');
+
+
 
 let pageArray = [];
 
@@ -23,7 +26,6 @@ btnCreate.addEventListener('click', () => {
     page.createPage();
     clearForm();
     updateLocal();
-    console.log(pageArray);
 });
 
 document.querySelector('.smile1').addEventListener('click', () => {
@@ -32,13 +34,15 @@ document.querySelector('.smile1').addEventListener('click', () => {
 });
 
 
-if (localStorage.page ) {
+if (localStorage.page) {
     pageArray = JSON.parse( localStorage.getItem('page'));
 
     pageArray.forEach((item, index) => {
         pageArray[index] = new Pages(item.title, item.date, item.smile,  item.description);
         pageArray[index].createPage();
+        
     });
+    
 } else {pageArray = [];}
 
 function showWindow() {
@@ -69,4 +73,10 @@ function buttonSlime() {
             });
         });
 
+}
+
+function btnBack() {
+    document.querySelector('.header__inner').classList.remove('blur');
+    list.classList.remove('blur');
+    document.querySelector('.noteModal').innerHTML = '';
 }
