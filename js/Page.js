@@ -1,8 +1,8 @@
 class Pages {
-    constructor(title, date, /*smile,*/ description, /*image*/) {
+    constructor(title, date, smile, description, /*image*/) {
         this.title = title,
         this.date = date,
-       // this.smile = smile,
+        this.smile = smile,
         this.description = description
        // this.image = image
     }
@@ -13,7 +13,7 @@ class Pages {
         <div class="list__item">
             <div class="list__item-img">
                 <div class="smile">
-                    <p class="smile-item"></p>
+                    <p class="smile-item">${this.smile}</p>
                 </div>
             </div>
             <div class="text">

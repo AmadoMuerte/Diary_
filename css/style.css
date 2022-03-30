@@ -151,9 +151,11 @@ body {
 .list {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-right: -10px; }
   .list__item {
+    margin-right: 10px;
     margin-top: 10px;
     width: 280px;
     height: 280px;
@@ -312,6 +314,9 @@ body {
 
 .invisible {
   display: block; }
+
+.smiles {
+  cursor: pointer; }
 
 .search__smile-modal {
   position: absolute;
